@@ -9,4 +9,9 @@ public class ExperimentsController : MonoBehaviour
     {
         TransitionScript.instance.BoxTransitionToScene("Experiment " + experimentNumber);
     }
+
+    public void Back()
+    {
+        TransitionScript.instance.BoxTransitionToScene("Onboarding", false);
+    }
 }

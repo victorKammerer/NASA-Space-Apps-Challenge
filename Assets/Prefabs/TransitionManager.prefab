@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aba4090b5d324346a961da585d43902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 7227422449191851406}
+  square: {fileID: 7227422449191851406}
   transitionTime: 0.8
 --- !u!223 &7951488729062406071
 Canvas:
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 8018138329855341015}
   - component: {fileID: 4328105968757187411}
   m_Layer: 5
-  m_Name: Ball
+  m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

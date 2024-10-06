@@ -17,4 +17,9 @@ public class OnExperimentController : MonoBehaviour
     {
         TransitionScript.instance.BoxTransitionToScene(type + " " + _currerntExperiment);
     }
+
+    public void Back()
+    {
+        TransitionScript.instance.BoxTransitionToScene("Experiments", false);
+    }
 }
