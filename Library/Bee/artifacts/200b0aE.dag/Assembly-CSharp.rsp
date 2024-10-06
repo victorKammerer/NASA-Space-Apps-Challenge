@@ -362,6 +362,7 @@
 "Assets/Scripts/ExperimentsController.cs"
 "Assets/Scripts/OnboardingController.cs"
 "Assets/Scripts/StartController.cs"
+"Assets/Scripts/TypeOutScript.cs"
 -langversion:9.0
 
 /deterministic

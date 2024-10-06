@@ -14,12 +14,17 @@ public class OnboardingController : MonoBehaviour
     public Color knobUnactiveColor;
 
     public TextMeshProUGUI title;
+    private TypeOutScript titleAnimation;
+    public float titleAnimationTime = 2;
+    private bool isInAnimation;
     public TextMeshProUGUI body;
     public TextMeshProUGUI buttonLabel;
     private int _currentSlide;
 
     private void Awake()
     {
+        titleAnimation = title.GetComponent<TypeOutScript>();
+        titleAnimation.TotalTypeTime = titleAnimationTime;
         SetupSlide();
     }
 
@@ -51,11 +56,34 @@ public class OnboardingController : MonoBehaviour
 
     private void SetupSlide()
     {
+        if (isInAnimation)
+        {
+            isInAnimation = false;
+            StopAllCoroutines();
+        }
+
         title.text = onboardingSlides[_currentSlide].title;
+        titleAnimation.FinalText = title.text;
+        StartCoroutine(titleAnimationCoroutine());
         body.text = onboardingSlides[_currentSlide].body;
         buttonLabel.text = onboardingSlides[_currentSlide].buttonLabel;
+        titleAnimation.On = true;
 
         SetupKnob();
+    }
+
+    IEnumerator titleAnimationCoroutine()
+    {
+        titleAnimation.reset = true;
+        title.enableAutoSizing = true;
+        yield return new WaitForSeconds(0);
+        titleAnimation.On = true;
+        float previousFontSize = title.fontSize;
+        title.enableAutoSizing = false;
+        title.fontSize = previousFontSize;
+        yield return new WaitForSeconds(titleAnimationTime);
+        title.enableAutoSizing = true;
+        isInAnimation = false;
     }
 
     private void SetupKnob()
