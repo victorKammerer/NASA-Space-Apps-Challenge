@@ -339,7 +339,6 @@
 -r:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
--r:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenUpgradeManager.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/log4netPlastic.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll"
 -r:"Library/PackageCache/com.unity.collab-proxy@2.5.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
