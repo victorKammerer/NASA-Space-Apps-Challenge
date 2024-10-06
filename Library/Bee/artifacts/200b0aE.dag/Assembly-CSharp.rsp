@@ -119,11 +119,6 @@
 -define:DOTWEEN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"/Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
--r:"/Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll"
--r:"/Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
--r:"/Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
--r:"/Applications/Unity/Hub/Editor/2022.3.13f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -358,12 +353,17 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/API.cs"
+"Assets/Scripts/379API.cs"
+"Assets/Scripts/665API.cs"
 "Assets/Scripts/ExperimentsController.cs"
 "Assets/Scripts/OnboardingController.cs"
 "Assets/Scripts/OnExperimentController.cs"
 "Assets/Scripts/StartController.cs"
 "Assets/Scripts/TypeOutScript.cs"
+"Assets/SimpleJSON-master/SimpleJSON.cs"
+"Assets/SimpleJSON-master/SimpleJSONBinary.cs"
+"Assets/SimpleJSON-master/SimpleJSONDotNetTypes.cs"
+"Assets/SimpleJSON-master/SimpleJSONUnity.cs"
 "Assets/TransitionScript.cs"
 -langversion:9.0
 
