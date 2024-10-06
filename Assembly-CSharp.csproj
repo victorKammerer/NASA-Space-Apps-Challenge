@@ -64,13 +64,33 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/CodeMonkey_Graph/Scripts/Window_Graph.cs" />
     <Compile Include="Assets/Scripts/OnboardingController.cs" />
     <Compile Include="Assets/Scripts/StartController.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/FunctionUpdater.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/UI_TextComplex.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/FunctionPeriodic.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/UI_BarMultiple.cs" />
+    <Compile Include="Assets/CodeMonkey/MonoBehaviours/PositionRendererSorter.cs" />
+    <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollowSetup.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/UtilsClass.cs" />
+    <Compile Include="Assets/CodeMonkey/MonoBehaviours/ComponentActions.cs" />
     <Compile Include="Assets/Scripts/TypeOutScript.cs" />
+    <Compile Include="Assets/CodeMonkey/CMDebug.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/FunctionTimer.cs" />
+    <Compile Include="Assets/CodeMonkey/MonoBehaviours/CameraFollow.cs" />
     <Compile Include="Assets/TransitionScript.cs" />
     <Compile Include="Assets/Scripts/ExperimentsController.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/UI_Bar.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/World_Bar.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/Button_Sprite.cs" />
     <Compile Include="Assets/API.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/UI_Sprite.cs" />
+    <Compile Include="Assets/CodeMonkey/Assets.cs" />
     <Compile Include="Assets/Scripts/OnExperimentController.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/World_Sprite.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/World_Mesh.cs" />
+    <Compile Include="Assets/CodeMonkey/Utils/Button_UI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
@@ -79,6 +99,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets/CodeMonkey/README.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
