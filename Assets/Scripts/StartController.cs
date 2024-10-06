@@ -7,11 +7,11 @@ public class StartController : MonoBehaviour
 {
     public void LoadOnboarding()
     {
-        TransitionScript.instance.BallTransitionToScene("Onboarding");
+        TransitionScript.instance.BoxTransitionToScene("Onboarding");
     }
 
     public void LoadExperiments()
     {
-        TransitionScript.instance.BallTransitionToScene("Experiments");
+        TransitionScript.instance.BoxTransitionToScene("Experiments");
     }
 }
