@@ -21,7 +21,7 @@ public class TransitionScript : MonoBehaviour
         }
     }
 
-    public void BallTransitionToScene(string sceneName, bool isFromTheLeft = true)
+    public void BoxTransitionToScene(string sceneName, bool isFromTheLeft = true)
     {
         Vector3 previousPosition = ball.transform.localPosition;
         if (!isFromTheLeft)

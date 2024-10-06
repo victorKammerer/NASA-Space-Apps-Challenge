@@ -7,6 +7,6 @@ public class ExperimentsController : MonoBehaviour
 {
     public void LoadExperiment(int experimentNumber)
     {
-        TransitionScript.instance.BallTransitionToScene("Experiment " + experimentNumber);
+        TransitionScript.instance.BoxTransitionToScene("Experiment " + experimentNumber);
     }
 }

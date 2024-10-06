@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -292.49997, y: 113}
-  m_SizeDelta: {x: -841.0001, y: 280}
+  m_AnchoredPosition: {x: -292.5, y: 107}
+  m_SizeDelta: {x: -841.0001, y: 354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218962670
 MonoBehaviour:
@@ -190,8 +190,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.2
+  m_fontSize: 96
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -314,7 +314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -509, y: -312}
+  m_AnchoredPosition: {x: -531, y: -312}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &261539317
@@ -619,8 +619,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 121, y: -96}
-  m_SizeDelta: {x: 160, y: 44}
+  m_AnchoredPosition: {x: 143.2807, y: -96}
+  m_SizeDelta: {x: 115.4386, y: 44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &825948059
 MonoBehaviour:
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825948057}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -698,8 +698,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 22a0a29b1b8644a5cb955af112231212, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -982,6 +982,9 @@ MonoBehaviour:
       discoveries made in space can lead to innovations in medicine and biotechnology
       on Earth.
     buttonLabel: Next
+    primaryColor: {r: 0.85882354, g: 0.27058825, b: 0.69411767, a: 1}
+    bodyColor: {r: 1, g: 1, b: 1, a: 1}
+    backgroundImage: {fileID: 21300000, guid: f543e72ab54b547fbb5f2b0685c8b324, type: 3}
   - title: Why mice, and what is the science behind  their role in research?
     body: Mice are excellent models for scientific research because they share many
       genes with humans, making them invaluable for understanding complex biological
@@ -993,6 +996,9 @@ MonoBehaviour:
       also helps prepare us for longer space missions and potential exploration of
       other planets.
     buttonLabel: Next
+    primaryColor: {r: 0.023529412, g: 0.23137255, b: 0.47058824, a: 1}
+    bodyColor: {r: 0.023529412, g: 0.23137257, b: 0.47058827, a: 1}
+    backgroundImage: {fileID: 21300000, guid: b68671a28baec45be83d696595281dcc, type: 3}
   - title: RNA! Something  important to know.
     body: RNA, or ribonucleic acid, is a crucial molecule that mediates the flow
       of genetic information and regulates cellular functions in all living organisms.
@@ -1004,17 +1010,24 @@ MonoBehaviour:
       during extended missions. Furthermore, insights gained from RNA studies in
       space can enhance our understanding of age-related diseases on Earth, fostering
       innovative approaches in regenerative medicine.
-    buttonLabel: Nice!
+    buttonLabel: Let's go!
+    primaryColor: {r: 0.38039216, g: 0.76862746, b: 0.32941177, a: 1}
+    bodyColor: {r: 1, g: 1, b: 1, a: 1}
+    backgroundImage: {fileID: 21300000, guid: d072093d47fc14d00881f5a55ca92a25, type: 3}
   Knobs:
   - {fileID: 1958820229}
   - {fileID: 1937668292}
   - {fileID: 261539318}
-  knobActiveColor: {r: 0, g: 0, b: 0, a: 1}
   knobUnactiveColor: {r: 0.8509804, g: 0.8509804, b: 0.8509804, a: 1}
+  colorAnimationTime: 0.3
   title: {fileID: 218962670}
   titleAnimationTime: 2
+  background: {fileID: 1445522258}
   body: {fileID: 2112882276}
-  buttonLabel: {fileID: 898319359}
+  backButtonImage: {fileID: 825948060}
+  backButtonLabel: {fileID: 548170385}
+  nextButtonImage: {fileID: 1476586240}
+  nextButtonLabel: {fileID: 898319359}
 --- !u!1 &1445522256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.9843137, b: 0.9372549, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1325,7 +1338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -560, y: -312}
+  m_AnchoredPosition: {x: -571, y: -312}
   m_SizeDelta: {x: 16, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1937668291
@@ -1475,7 +1488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -248.76208, y: -138}
+  m_AnchoredPosition: {x: -248.76208, y: -154}
   m_SizeDelta: {x: -761.5243, y: 168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2112882276
@@ -1512,8 +1525,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

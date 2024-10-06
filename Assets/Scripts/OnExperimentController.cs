@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnExperimentController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private string _currerntExperiment;
+
     void Start()
     {
-        
+        string sceneName = SceneManager.GetActiveScene().name;
+        _currerntExperiment = "" + sceneName[sceneName.Length - 1];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GoToExperimentDetail(string type)
     {
-        
+        TransitionScript.instance.BoxTransitionToScene(type + " " + _currerntExperiment);
     }
 }
