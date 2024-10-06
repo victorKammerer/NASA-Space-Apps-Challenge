@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -26,6 +27,7 @@ public class OnboardingController : MonoBehaviour
         titleAnimation = title.GetComponent<TypeOutScript>();
         titleAnimation.TotalTypeTime = titleAnimationTime;
         SetupSlide();
+        SetupKnob(true);
     }
 
     public void GoToNextSlide()
@@ -34,7 +36,7 @@ public class OnboardingController : MonoBehaviour
 
         if (_currentSlide == onboardingSlides.Length)
         {
-            SceneManager.LoadScene("Experiments");
+            TransitionScript.instance.BallTransitionToScene("Experiments");
             return;
         }
 
@@ -47,7 +49,7 @@ public class OnboardingController : MonoBehaviour
 
         if (_currentSlide == -1)
         {
-            SceneManager.LoadScene("Start");
+            TransitionScript.instance.BallTransitionToScene("Start", false);
             return;
         }
 
@@ -86,13 +88,16 @@ public class OnboardingController : MonoBehaviour
         isInAnimation = false;
     }
 
-    private void SetupKnob()
+    private void SetupKnob(bool isInitialSetup = false)
     {
         int currentKnob = 0;
         foreach (Image knob in Knobs)
         {
-            Debug.Log(knob.gameObject.name);
-            knob.color = currentKnob == _currentSlide ? knobActiveColor : knobUnactiveColor;
+            Color desiredColor = currentKnob == _currentSlide ? knobActiveColor : knobUnactiveColor;
+            if (isInitialSetup)
+                knob.color = desiredColor;
+            else
+                knob.DOColor(desiredColor, titleAnimationTime / 4);
             currentKnob += 1;
         }
     }

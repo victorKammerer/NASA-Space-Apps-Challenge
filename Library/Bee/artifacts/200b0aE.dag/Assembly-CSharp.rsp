@@ -361,8 +361,10 @@
 "Assets/API.cs"
 "Assets/Scripts/ExperimentsController.cs"
 "Assets/Scripts/OnboardingController.cs"
+"Assets/Scripts/OnExperimentController.cs"
 "Assets/Scripts/StartController.cs"
 "Assets/Scripts/TypeOutScript.cs"
+"Assets/TransitionScript.cs"
 -langversion:9.0
 
 /deterministic

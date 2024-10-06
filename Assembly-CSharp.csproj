@@ -67,8 +67,10 @@
     <Compile Include="Assets/Scripts/OnboardingController.cs" />
     <Compile Include="Assets/Scripts/StartController.cs" />
     <Compile Include="Assets/Scripts/TypeOutScript.cs" />
+    <Compile Include="Assets/TransitionScript.cs" />
     <Compile Include="Assets/Scripts/ExperimentsController.cs" />
     <Compile Include="Assets/API.cs" />
+    <Compile Include="Assets/Scripts/OnExperimentController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
